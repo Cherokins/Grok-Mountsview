@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mountsview Technical College</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <div class="nav__logo">Mountsview Technical College</div>
+      <button class="nav__toggle" aria-label="Toggle menu">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="nav__list">
+        <li><a href="index.html" class="nav__link">Home</a></li>
+        <li><a href="about.html" class="nav__link">About</a></li>
+        <li><a href="academics.html" class="nav__link">Academics</a></li>
+        <li><a href="admissions.html" class="nav__link">Admissions</a></li>
+        <li><a href="contact.html" class="nav__link">Contact</a></li>
+      </ul>
+    </nav>
+    <section class="hero">
+      <h1 class="hero__title">Center for Technical Skills and Health Sciences</h1>
+      <a href="#courses" class="btn btn--primary">Explore Courses</a>
+    </section>
+  </header>
+
+  <main>
+    <section id="courses" class="courses">
+      <h2 class="courses__title">Our Programs</h2>
+      <div class="courses__grid">
+        <!-- IT Courses -->
+        <div class="course-card">
+          <h3>IT Programs</h3>
+          <p>Digital Literacy, Graphic Design, Computer Repairs</p>
+          <button class="btn btn--primary" data-modal="apply-modal">Apply Now</button>
+        </div>
+        <!-- Technical Courses -->
+        <div class="course-card">
+          <h3>Technical Programs</h3>
+          <p>Fashion Design, Hairdressing, Electronics, Electrical</p>
+          <button class="btn btn--primary" data-modal="apply-modal">Apply Now</button>
+        </div>
+        <!-- Health Courses -->
+        <div class="course-card">
+          <h3>Health Sciences</h3>
+          <p>CNA/HSS, Peri-Operative, Phlebotomy, Community Health, Nutrition</p>
+          <button class="btn btn--primary" data-modal="apply-modal">Apply Now</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal -->
+  <div id="apply-modal" class="modal">
+    <div class="modal__content">
+      <span class="modal__close">&times;</span>
+      <h2>Apply to Mountsview</h2>
+      <div class="modal__options">
+        <a href="tel:0700635325" class="btn btn--secondary">Call Us</a>
+        <a href="https://wa.me/254700635325?text=Hello,%20I’m%20interested%20in%20applying%20to%20Mountsview%20Technical%20College.%20Please%20guide%20me." class="btn btn--secondary">WhatsApp</a>
+        <a href="https://forms.gle/qCDMy7oj5mysPui28" class="btn btn--secondary">Google Form</a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer__map">
+      <div class="spinner"></div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d36.82194631531667!3d-1.2863898999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMSLCsDE3JzExLjAiUyAzNsKwNDknMTguOSJF!5e0!3m2!1sen!2ske!4v1697051234567" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" aria-label="Mountsview Technical College Location"></iframe>
+    </div>
+    <p class="footer__credit">Designed by <span class="footer__designer">✨ Elvis ✨</span></p>
+  </footer>
+
+  <script src="scripts/scripts.js"></script>
+</body>
+</html>
